@@ -11,15 +11,19 @@ function Header () {
 				{/* icons */}
 				<section class="flex justify-evenly w-[10em] mt-[12.5px] text-5xl">
 					<a href="https://github.com/dsapione" target="blank">
-						<i class="fa-brands fa-square-github transition duration-500 hover:text-slate-500 hover:ease-in-out"></i>
+						<i class="fa-brands fa-square-github duration-500 hover:text-slate-500 hover:ease-in-out"></i>
 					</a>
 					<a href="mailto:dsapion@gmail.com">
-						<i class="fa-solid fa-envelope transition duration-500 hover:text-slate-500 hover:ease-in-out"></i>
+						<i class="fa-solid fa-envelope duration-500 hover:text-slate-500 hover:ease-in-out"></i>
 					</a>
 					<a href="https://www.linkedin.com/in/daniel-sapione/" target="_blank" rel="noreferrer">
-						<i class="fa-brands fa-linkedin transition duration-500 hover:text-slate-500 hover:ease-in-out"></i>
+						<i class="fa-brands fa-linkedin duration-500 hover:text-slate-500 hover:ease-in-out"></i>
 					</a>
 				</section>
+				<a class="flex flex-col text-3xl absolute bottom-0 duration-500 opacity-40 hover:opacity-80 hover:ease-in-out" href="#aside">
+					<i class="fa-solid fa-chevron-down translate-y-2"></i>
+					<i class="fa-solid fa-chevron-down -translate-y-1 bg-transparent"></i>
+				</a>
 			</header>
 	);
 };
