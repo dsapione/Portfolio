@@ -1,38 +1,19 @@
 import React from 'react';
 
-function Aside () {
+function Aside (props) {
+	const setCurrentPage = props.setCurrentPage
+	
 	return (
 		<aside id="aside">
-			<nav class="text-4xl font-bold">
-				<ul class="flex flex-col w-max ml-3 gap-6">
-					<li>
-						<a href="">
-							<h2 class="duration-500 hover:text-slate-500 hover:ease-in-out"> ABOUT </h2>
-						</a>
-					</li>
-
-					<li>
-						<a href="">
-							<h2 class="duration-500 hover:text-slate-500 hover:ease-in-out"> SKILLS </h2>
-						</a>
-					</li>
-
-					<li>
-						<a href="">
-							<h2 class="duration-500 hover:text-slate-500 hover:ease-in-out"> PROJECTS </h2>
-						</a>	
-					</li>
-					<li>
-						<a href="">
-							<h2 class="duration-500 hover:text-slate-500 hover:ease-in-out"> RESUME </h2>
-						</a>
-					</li>
-
-					<li>
-						<a href="">
-							<h2 class="duration-500 hover:text-slate-500 hover:ease-in-out"> CONTACT </h2>
-						</a>
-					</li>
+			<nav className="text-4xl font-bold">
+				<ul className="flex flex-col w-max ml-3 gap-6">
+					{props.pages.map(page => (
+						<li>
+							<a href="#" key={page.name} onClick={() => setCurrentPage(page)}>
+								<h2 className="duration-500 hover:text-slate-500 hover:ease-in-out"> {page.name} </h2>
+							</a>
+						</li>
+					))}
 				</ul>
 			</nav>
 		</aside>
