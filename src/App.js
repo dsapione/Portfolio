@@ -1,8 +1,9 @@
 import './App.css';
 import React , { useState } from 'react';
 import Header from './components/header';
-import Footer from './components/footer';
 import Aside from './components/aside';
+import Main from './components/main';
+import Footer from './components/footer';
 
 function App() {
 
@@ -28,9 +29,10 @@ function App() {
 
   return (
 		<>
-			<Header />
+			<Header/>
 			<Aside pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
-			<Footer />
+			<Main currentPage={currentPage}/>
+			<Footer/>
 		</>
   );
 }

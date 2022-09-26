@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 function Aside (props) {
 	const setCurrentPage = props.setCurrentPage
 	
 	return (
+		// nav bar on the left of the screen
 		<aside id="aside" className='float-left text-4xl font-bold w-max m-4'>
 			<nav>
 				<ul className="flex flex-col items-center gap-6">
