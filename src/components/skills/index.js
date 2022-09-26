@@ -1,8 +1,8 @@
 import React from "react";
-import jqueryIcon from "../../assets/images/jquery.svg"
-import graphqlIcon from "../../assets/images/graphql.svg"
-import mysqlIcon from "../../assets/images/mysql.svg"
-import tailwindIcon from "../../assets/images/tailwind.svg"
+import jqueryIcon from "../../assets/images/jquery.svg";
+import graphqlIcon from "../../assets/images/graphql.svg";
+import mysqlIcon from "../../assets/images/mysql.svg";
+import tailwindIcon from "../../assets/images/tailwind.svg";
 
 function Skills() {
 	return (

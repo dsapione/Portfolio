@@ -3,7 +3,7 @@ import About from '../about';
 import Skills from '../skills';
 // import Projects from '../projects';
 // import Contact from '../contact';
-// import Resume from '../resume';
+import Resume from '../resume';
 
 const Main = (props) => {
 	const renderPage = () => {
@@ -14,9 +14,11 @@ const Main = (props) => {
 		} 
 		// else if (props.currentPage.name === 'PROJECTS') {
 		// 	return <Projects/>
-		// } else if (props.currentPage.name === 'RESUME') {
-		// 	return <Resume/>
-		// } else { return <Contact/>}
+		// } 
+		else if (props.currentPage.name === 'RESUME') {
+			return <Resume/>
+		} 
+		// else { return <Contact/>}
 	}
 
 	return (
