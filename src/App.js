@@ -1,7 +1,8 @@
 import './App.css';
 import React , { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/header';
-import Aside from './components/aside';
+import Nav from './components/nav';
 import Main from './components/main';
 import Footer from './components/footer';
 
@@ -30,8 +31,10 @@ function App() {
   return (
 		<>
 			<Header/>
-			<Aside pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
-			<Main currentPage={currentPage}/>
+			<Nav pages={pages} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
+			<Routes>
+				<Route path='/' element={<Main currentPage={currentPage}/>} />
+			</Routes>			
 			<Footer/>
 		</>
   );

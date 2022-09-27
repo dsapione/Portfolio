@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-function Aside (props) {
+function Nav (props) {
 	const setCurrentPage = props.setCurrentPage
 	
 	return (
@@ -22,4 +22,4 @@ function Aside (props) {
 	);
 };
 
-export default Aside;
+export default Nav;
