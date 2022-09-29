@@ -1,31 +1,21 @@
 import React from "react";
+import { Route, Routes} from 'react-router-dom';
 import About from '../about';
 import Skills from '../skills';
 // import Projects from '../projects';
 // import Contact from '../contact';
 import Resume from '../resume';
 
-const Main = (props) => {
-	const renderPage = () => {
-		if (props.currentPage.name === 'ABOUT') {
-			return <About/>
-		} else if (props.currentPage.name === 'SKILLS') {
-			return <Skills/>
-		} 
-		// else if (props.currentPage.name === 'PROJECTS') {
-		// 	return <Projects/>
-		// } 
-		else if (props.currentPage.name === 'RESUME') {
-			return <Resume/>
-		} 
-		// else { return <Contact/>}
-	}
+function Main () {
 
 	return (
-		<div>
-			{renderPage()}
-		</div>
-	)
+		<Routes>
+			<Route path='/ABOUT' element={<About/>}/>
+			<Route path='/SKILLS' element={<Skills/>}/>
+			<Route path='/RESUME' element={<Resume/>}/>
+		</Routes>
+
+	);
 }
 
 export default Main;
