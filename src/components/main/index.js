@@ -10,9 +10,9 @@ function Main () {
 
 	return (
 		<Routes>
-			<Route path='/ABOUT' element={<About/>}/>
-			<Route path='/SKILLS' element={<Skills/>}/>
-			<Route path='/RESUME' element={<Resume/>}/>
+			<Route path='/' element={<About/>}/>
+			<Route path='/skills' element={<Skills/>}/>
+			<Route path='/resume' element={<Resume/>}/>
 		</Routes>
 
 	);

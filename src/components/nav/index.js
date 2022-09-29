@@ -5,19 +5,24 @@ function Nav () {
 
 	const pages = [
 		{
-			name: 'ABOUT'
+			name: 'ABOUT',
+			link: '/'
 		},
 		{
-			name: 'SKILLS'
+			name: 'SKILLS',
+			link: 'skills'
 		},
 		{
-			name: 'PROJECTS'
+			name: 'PROJECTS',
+			link: 'projects'
 		},
 		{
-			name: 'RESUME'
+			name: 'RESUME',
+			link: 'resume'
 		},
 		{
-			name: 'CONTACT'
+			name: 'CONTACT',
+			link: 'contact'
 		}
 	];
 	
@@ -28,7 +33,7 @@ function Nav () {
 				<ul className="flex flex-col items-center gap-6">
 					{pages.map(page => (
 						<li>
-							<Link to={page.name} key={page.name}>
+							<Link to={page.link} key={page.name}>
 								<h2 className="duration-500 hover:text-sky-500 hover:text-5xl hover:ease-in-out"> {page.name} </h2>
 							</Link>
 						</li>
