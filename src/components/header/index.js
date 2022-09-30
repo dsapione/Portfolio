@@ -6,8 +6,8 @@ function Header () {
 			<header className="flex flex-col justify-center items-center h-screen">
 				<h1 className="title text-8xl font-bold">Daniel Sapione</h1>
 				<p className="text-xl -translate-y-2" >FRONT END DEVELOPER | PORTFOLIO</p>
-				{/* line div between name and icons */}
-				<div className="border-b-[6px] border-solid border-sky-500 rounded-[3px] w-[26em]"></div>
+				{/* line span between name and icons */}
+				<span className="border-b-[6px] border-solid border-sky-500 rounded-[3px] w-[26em]"></span>
 				{/* icons */}
 				<section className="flex justify-evenly w-[10em] mt-[12.5px] text-5xl">
 					<a href="https://github.com/dsapione" target="blank">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Nav () {
 
@@ -10,19 +10,19 @@ function Nav () {
 		},
 		{
 			name: 'SKILLS',
-			link: 'skills'
+			link: '/skills'
 		},
 		{
 			name: 'PROJECTS',
-			link: 'projects'
+			link: '/projects'
 		},
 		{
 			name: 'RESUME',
-			link: 'resume'
+			link: '/resume'
 		},
 		{
 			name: 'CONTACT',
-			link: 'contact'
+			link: '/contact'
 		}
 	];
 	
@@ -33,9 +33,9 @@ function Nav () {
 				<ul className="flex flex-col items-center gap-6">
 					{pages.map(page => (
 						<li>
-							<Link to={page.link} key={page.name}>
-								<h2 className="duration-500 hover:text-sky-500 hover:text-5xl hover:ease-in-out"> {page.name} </h2>
-							</Link>
+							<NavLink to={page.link} end={true} key={page.name} className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+								<h2> {page.name} </h2>
+							</NavLink>
 						</li>
 					))}
 				</ul>
