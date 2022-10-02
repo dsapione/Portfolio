@@ -4,6 +4,7 @@
 	background-color: #1e293b;
 	color: white;
 	font-family: 'Saira Condensed', sans-serif;
+	scroll-behavior: smooth;
 }
 
 .title {
@@ -23,7 +24,7 @@ li h2:hover:after {
 }
 
 .active h2:after {
-transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 .inactive h2:after {
