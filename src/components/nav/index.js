@@ -28,9 +28,9 @@ function Nav () {
 	
 	return (
 		// nav bar on the left of the screen
-		<aside id="aside" className='float-left text-4xl font-bold w-max m-4'>
+		<aside id="aside" className='sm:flex sm:justify-center md:m-3 lg:float-left text-4xl font-bold lg:w-max lg:m-4'>
 			<nav>
-				<ul className="flex flex-col items-center gap-6">
+				<ul className="flex lg:flex-col items-center gap-6">
 					{pages.map(page => (
 						<li>
 							<NavLink to={page.link} end={true} key={page.name} className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
