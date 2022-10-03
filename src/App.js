@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import { React, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Nav from './components/nav';
@@ -12,10 +12,12 @@ import Footer from './components/footer';
 
 function App() {
 
+	const [selectedItem, setSelectedItem] = useState("MENU");
+
   return (
 		<>
 			<Header/>
-			<Nav/>
+			<Nav selectedItem={selectedItem} setSelectedItem={setSelectedItem}/>
 			<Routes>
 				<Route path='/' element={<About/>}/>
 				<Route path='/skills' element={<Skills/>}/>
